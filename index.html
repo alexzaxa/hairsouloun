@@ -3,71 +3,77 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grain Hair Studio — Κούρεμα, βαφή & περιποίηση για όλους</title>
-<meta name="description" content="Το Grain είναι ένα unisex studio μαλλιών για κούρεμα, βαφή και θεραπείες. Κλείστε ραντεβού με τους στυλίστες μας.">
+<title>Grain Hair Studio — Κούρεμα, βαφή &amp; περιποίηση για όλους</title>
+<meta name="description" content="Το Grain είναι ένα unisex studio μαλλιών με τέσσερις καρέκλες και τέσσερις μόνιμους στυλίστες. Κούρεμα, βαφή, υφή και φινίρισμα — χωρίς κατηγορίες φύλου.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Grain Hair Studio — Κούρεμα, βαφή &amp; περιποίηση για όλους">
+<meta property="og:description" content="Ένα unisex studio μαλλιών με τέσσερις καρέκλες και τέσσερις μόνιμους στυλίστες. Χωρίς κατηγορίες φύλου, με συμβουλευτική πριν από κάθε ραντεβού.">
+<meta property="og:url" content="https://grainhairstudio.example/">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body data-page="home">
 
 <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
 
 <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="wordmark" href="#top">Grain</a>
-    <nav class="main-nav" aria-label="Κύριο μενού">
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
-        <span></span><span></span><span></span>
-        <span class="sr-only">Μενού</span>
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Grain</a>
+    <div class="header-actions">
+      <nav class="main-nav" aria-label="Κύριο μενού">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Μενού</span>
+        </button>
+        <ul id="navList" class="nav-list">
+          <li><a class="nav-link" data-nav="home" href="index.html">Αρχική</a></li>
+          <li><a class="nav-link" data-nav="about" href="about.html">Σχετικά</a></li>
+          <li><a class="nav-link" data-nav="services" href="services.html">Υπηρεσίες</a></li>
+          <li><a class="nav-link" data-nav="stylists" href="stylists.html">Στυλίστες</a></li>
+          <li><a class="nav-link" data-nav="gallery" href="gallery.html">Βιβλιοθήκη χρωμάτων</a></li>
+          <li><a class="nav-link" data-nav="faq" href="faq.html">Συχνές ερωτήσεις</a></li>
+          <li><a class="nav-link" data-nav="contact" href="contact.html">Επικοινωνία</a></li>
+          <li><a href="contact.html#booking" class="nav-cta">Κλείστε ραντεβού</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" aria-label="Εναλλαγή σκοτεινού φωτισμού">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
       </button>
-      <ul id="navList" class="nav-list">
-        <li><a href="#services">Υπηρεσίες</a></li>
-        <li><a href="#stylists">Στυλίστες</a></li>
-        <li><a href="#gallery">Βιβλιοθήκη χρωμάτων</a></li>
-        <li><a href="#booking" class="nav-cta">Κλείστε ραντεβού</a></li>
-      </ul>
-    </nav>
+    </div>
   </div>
 </header>
 
 <main id="main">
 
-  <section id="top" class="hero">
-    <div class="wrap hero-grid">
-      <div class="hero-copy">
-        <h1>Κόβουμε<br>με τη φορά.</h1>
-        <p class="hero-sub">Ένα unisex studio μαλλιών για όσους θέλουν να γίνει σωστά, όχι να γίνει ιστορία. Ίδιες τέσσερις καρέκλες, ίδιοι τέσσερις στυλίστες, καμία πρόταση για extra υπηρεσίες.</p>
+  <section class="hero">
+    <div class="hero-mesh" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div>
+        <h1 class="h1">
+          <span class="hero-word" style="--word-delay:0s">Κόβουμε</span><br>
+          <span class="hero-word" style="--word-delay:.08s">με</span>
+          <span class="hero-word" style="--word-delay:.16s">τη</span>
+          <span class="hero-word" style="--word-delay:.24s">φορά.</span>
+        </h1>
+        <p class="hero-sub lede">Ένα unisex studio μαλλιών για όσους θέλουν να γίνει σωστά, όχι να γίνει ιστορία. <em>Ίδιες τέσσερις καρέκλες, ίδιοι τέσσερις στυλίστες</em>, καμία πρόταση για extra υπηρεσίες.</p>
         <div class="hero-actions">
-          <a href="#booking" class="btn btn-primary">Κλείστε ραντεβού</a>
-          <a href="#services" class="btn btn-ghost">Δείτε υπηρεσίες &amp; τιμές</a>
+          <a href="contact.html#booking" class="btn btn-primary">Κλείστε ραντεβού</a>
+          <a href="services.html" class="btn btn-ghost">Δείτε υπηρεσίες &amp; τιμές</a>
         </div>
       </div>
-      <div class="hero-art" aria-hidden="true">
-        <svg class="comb-scissor" viewBox="0 0 400 460" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g class="draw-in" stroke="#B3873F" stroke-width="2.5" stroke-linecap="round">
-            <line x1="60" y1="40" x2="60" y2="260"/>
-            <line x1="90" y1="40" x2="90" y2="260"/>
-            <line x1="120" y1="40" x2="120" y2="260"/>
-            <line x1="150" y1="40" x2="150" y2="260"/>
-            <line x1="180" y1="40" x2="180" y2="260"/>
-            <line x1="210" y1="40" x2="210" y2="260"/>
-            <line x1="240" y1="40" x2="240" y2="260"/>
-            <line x1="270" y1="40" x2="270" y2="260"/>
-            <line x1="55" y1="40" x2="275" y2="40" stroke-width="4"/>
-          </g>
-          <g class="draw-in draw-in-delay" stroke="#201D19" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="90" cy="330" r="22"/>
-            <circle cx="90" cy="410" r="22"/>
-            <line x1="112" y1="322" x2="300" y2="180"/>
-            <line x1="112" y1="418" x2="300" y2="220"/>
-          </g>
-        </svg>
+      <div class="hero-figure card" data-reveal>
+        <p class="stylist-role">Από το 2019</p>
+        <h3>Τέσσερις καρέκλες. Τέσσερις στυλίστες.</h3>
+        <p class="muted">Ίδιοι άνθρωποι κάθε φορά — όχι τυχαία διαθεσιμότητα. Ξέρεις ποιος θα κόψει τα μαλλιά σου πριν καν μπεις.</p>
+        <hr class="rule">
+        <p class="muted" style="margin-top: 1rem; margin-bottom: 0;">Λεωφ. Λάρτς 118 · Τρ–Κυρ</p>
       </div>
     </div>
-    <div class="hero-strip wrap">
+    <div class="container hero-meta">
       <span>Τρ–Παρ 10–7</span>
       <span>Σάβ 9–5</span>
       <span>Κυρ 11–4</span>
@@ -76,256 +82,137 @@
     </div>
   </section>
 
-  <section class="philosophy">
-    <div class="wrap philosophy-grid">
-      <p class="philosophy-lead">Δεν χωρίζουμε το μενού μας σε άντρες και γυναίκες. Ένα fade είναι fade, ένα balayage είναι balayage — το μόνο που μετράει είναι τι θέλεις να κάνουν τα μαλλιά σου.</p>
-      <p class="philosophy-body">Το Grain άνοιξε το 2019 με τέσσερις καρέκλες και έναν κανόνα: κανένας στυλίστας δεν κάνει μια υπηρεσία που δεν θα έκανε στον εαυτό του. Κάθε συμβουλευτική ξεκινά από το τι κάνουν πραγματικά τα μαλλιά σου — τη φορά τους, τον τρόπο που φυτρώνουν, εκείνο το ζωηρό τσουλούφι που παλεύεις από τα δώδεκά σου — πριν μιλήσουμε για το πώς θέλεις να καταλήξουν.</p>
-    </div>
-  </section>
-
-  <section id="services" class="services">
-    <div class="wrap">
-      <h2>Υπηρεσίες &amp; τιμές</h2>
-      <p class="section-note">Οι τιμές με + εξαρτώνται από το μήκος και την πυκνότητα — ο στυλίστας σου θα το επιβεβαιώσει πριν ξεκινήσει οτιδήποτε.</p>
-
-      <div class="menu-grid">
-        <div class="menu-group">
-          <h3>Κούρεμα</h3>
-          <ul class="ledger">
-            <li><span>Κούρεμα &amp; styling</span><span class="price">85€</span></li>
-            <li><span>Μόνο κούρεμα, χωρίς styling</span><span class="price">55€</span></li>
-            <li><span>Κούρεμα με μηχανή / fade</span><span class="price">45€</span></li>
-            <li><span>Σχηματισμός γενειάδας</span><span class="price">25€</span></li>
-            <li><span>Παιδικό κούρεμα, έως 12 ετών</span><span class="price">35€</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-group">
-          <h3>Βαφή</h3>
-          <ul class="ledger">
-            <li><span>Μονοδιαδικασία βαφή</span><span class="price">95€+</span></li>
-            <li><span>Balayage, ζωγραφιστό</span><span class="price">180€+</span></li>
-            <li><span>Ανταύγειες, ολόκληρο κεφάλι</span><span class="price">160€+</span></li>
-            <li><span>Ανταύγειες, μερικές</span><span class="price">110€+</span></li>
-            <li><span>Διόρθωση χρώματος</span><span class="price">κατόπιν συνεννόησης</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-group">
-          <h3>Υφή &amp; περιποίηση</h3>
-          <ul class="ledger">
-            <li><span>Κούρεμα για μπούκλες</span><span class="price">95€</span></li>
-            <li><span>Θεραπεία keratin</span><span class="price">220€</span></li>
-            <li><span>Βαθιά ενυδάτωση</span><span class="price">40€</span></li>
-            <li><span>Θεραπεία τριχωτού</span><span class="price">35€</span></li>
-          </ul>
-        </div>
-
-        <div class="menu-group">
-          <h3>Φινίρισμα</h3>
-          <ul class="ledger">
-            <li><span>Styling με πιστολάκι</span><span class="price">50€</span></li>
-            <li><span>Χτένισμα για ειδική περίσταση</span><span class="price">95€</span></li>
-            <li><span>Φινίρισμα με ζεστή πετσέτα &amp; ξυράφι</span><span class="price">20€</span></li>
-          </ul>
-        </div>
+  <section class="section">
+    <div class="container split">
+      <div data-reveal>
+        <h2 class="h2">Δεν χωρίζουμε<br>το μενού σε φύλα.</h2>
+      </div>
+      <div data-reveal style="--reveal-delay:.1s">
+        <p class="lede mt-0">Ένα fade είναι fade, ένα balayage είναι balayage — το μόνο που μετράει είναι τι θέλεις να κάνουν τα μαλλιά σου.</p>
+        <p class="measure">Κάθε συμβουλευτική ξεκινά από το τι κάνουν πραγματικά τα μαλλιά σου, πριν μιλήσουμε για το πώς θέλεις να καταλήξουν. Αν θες να μάθεις πώς δουλεύουμε αναλυτικά, δες την <a href="about.html">ιστορία του studio</a>.</p>
+        <a class="btn btn-ghost" href="about.html">Σχετικά με το Grain</a>
       </div>
     </div>
   </section>
 
-  <section id="stylists" class="stylists">
-    <div class="wrap">
-      <h2>Στυλίστες</h2>
-      <div class="stylist-grid">
-        <article class="stylist-card">
+  <section class="section section-tight" style="padding-top:0;">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="h2 mt-0">Τι κάνουμε</h2>
+        <p class="lede">Τέσσερις κατηγορίες υπηρεσιών, ένα ενιαίο μενού. Πλήρης τιμοκατάλογος στη σελίδα υπηρεσιών.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card" data-reveal>
+          <h3>Κούρεμα</h3>
+          <p class="muted">Ψαλιδιές, fade, γενειάδα. Από 25€.</p>
+          <a class="btn btn-ghost" href="services.html#cut">Δες τιμές</a>
+        </article>
+        <article class="card" data-reveal style="--reveal-delay:.08s">
+          <h3>Βαφή</h3>
+          <p class="muted">Balayage, ανταύγειες, μονοδιαδικασία. Από 95€.</p>
+          <a class="btn btn-ghost" href="services.html#color">Δες τιμές</a>
+        </article>
+        <article class="card" data-reveal style="--reveal-delay:.16s">
+          <h3>Υφή &amp; περιποίηση</h3>
+          <p class="muted">Keratin, ενυδάτωση, μπούκλες. Από 35€.</p>
+          <a class="btn btn-ghost" href="services.html#texture">Δες τιμές</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background: var(--paper-raised);">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <h2 class="h2 mt-0">Οι στυλίστες</h2>
+        <p class="lede">Τέσσερις άνθρωποι, τέσσερις ειδικότητες. <a href="stylists.html">Γνώρισέ τους όλους</a>.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="stylist-card" data-reveal>
           <span class="stylist-mark" aria-hidden="true">ΠΝ</span>
           <h3>Πρίγια Νάντι</h3>
           <p class="stylist-role">Head στυλίστρια &amp; colorist</p>
-          <p class="stylist-note">Διόρθωση χρώματος και οτιδήποτε ξεκινά με «λοιπόν, αυτό θα πάρει ώρα».</p>
+          <p class="muted">Διόρθωση χρώματος και οτιδήποτε ξεκινά με «λοιπόν, αυτό θα πάρει ώρα».</p>
         </article>
-        <article class="stylist-card">
+        <article class="stylist-card" data-reveal style="--reveal-delay:.08s">
           <span class="stylist-mark" aria-hidden="true">ΤΡ</span>
           <h3>Τζόνα Ρέγιες</h3>
           <p class="stylist-role">Κουρέας &amp; στυλίστας</p>
-          <p class="stylist-note">Ακριβή fade και ψαλιδιές. Θα σε αποτρέψει από μια κακή ιδέα, με τον τρόπο του.</p>
+          <p class="muted">Ακριβή fade και ψαλιδιές. Θα σε αποτρέψει από μια κακή ιδέα, με τον τρόπο του.</p>
         </article>
-        <article class="stylist-card">
+        <article class="stylist-card" data-reveal style="--reveal-delay:.16s">
           <span class="stylist-mark" aria-hidden="true">ΡΚ</span>
           <h3>Ρεν Κάλαχαν</h3>
           <p class="stylist-role">Senior στυλίστρια</p>
-          <p class="stylist-note">Ειδική σε μπούκλες. Κόβει στεγνά, για το σχήμα που θέλουν να κρατήσουν.</p>
-        </article>
-        <article class="stylist-card">
-          <span class="stylist-mark" aria-hidden="true">ΜΟ</span>
-          <h3>Μάρκους Ότζο</h3>
-          <p class="stylist-role">Colorist</p>
-          <p class="stylist-note">Balayage και χρώματα που έχουν μεγαλώσει και χρειάζονται δεύτερη γνώμη.</p>
+          <p class="muted">Ειδική σε μπούκλες. Κόβει στεγνά, για το σχήμα που θέλουν να κρατήσουν.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="gallery" class="color-library">
-    <div class="wrap">
-      <h2>Βιβλιοθήκη χρωμάτων</h2>
-      <p class="section-note">Μερικές από τις αποχρώσεις που φτιάχνουμε πιο συχνά. Φέρε μια φωτογραφία, ή δείξε μια απόχρωση — και τα δύο δουλεύουν.</p>
-    </div>
-    <div class="swatch-strip" role="list">
-      <div class="swatch" role="listitem" style="--chip:#1b1410;"><span>Μαύρο</span></div>
-      <div class="swatch" role="listitem" style="--chip:#3c2415;"><span>Καφέ εσπρέσο</span></div>
-      <div class="swatch" role="listitem" style="--chip:#7a4426;"><span>Καστανό</span></div>
-      <div class="swatch" role="listitem" style="--chip:#b5652f;"><span>Χάλκινο</span></div>
-      <div class="swatch" role="listitem" style="--chip:#c98a4b;"><span>Καραμελέ balayage</span></div>
-      <div class="swatch" role="listitem" style="--chip:#d8b27a;"><span>Μελί ξανθό</span></div>
-      <div class="swatch" role="listitem" style="--chip:#e8d4a8;"><span>Σαντρέ ξανθό</span></div>
-      <div class="swatch" role="listitem" style="--chip:#8a8578;"><span>Ασημί fade</span></div>
-      <div class="swatch" role="listitem" style="--chip:#5c3a4f;"><span>Ψυχρό δαμασκηνί</span></div>
-    </div>
-  </section>
-
-  <section class="testimonials">
-    <div class="wrap testimonial-grid">
-      <blockquote>
-        <p>Πρώτο κούρεμα εδώ και χρόνια που δεν χρειάστηκε να εξηγήσω δύο φορές.</p>
-        <cite>Ντάνα Ρ., πελάτισσα από το 2023</cite>
-      </blockquote>
-      <blockquote>
-        <p>Μοιάζει σαν να έκαναν παιδί ένα κουρείο κι ένα κομμωτήριο, με πολύ γούστο.</p>
-        <cite>Θόδωρος Μ.</cite>
-      </blockquote>
-      <blockquote>
-        <p>Με απέτρεψαν από το κούρεμα που ζήτησα. Ακόμα τους ευχαριστώ.</p>
-        <cite>Πριγιάνκα Σ.</cite>
-      </blockquote>
-    </div>
-  </section>
-
-  <section id="booking" class="booking">
-    <div class="wrap booking-grid">
-      <div class="booking-info">
-        <h2>Κλείστε ραντεβού</h2>
-        <ol class="steps">
-          <li><span class="step-num">1</span><span>Διάλεξε υπηρεσία από το μενού παραπάνω.</span></li>
-          <li><span class="step-num">2</span><span>Διάλεξε στυλίστα, ή άσ' το σε όποιον είναι διαθέσιμος.</span></li>
-          <li><span class="step-num">3</span><span>Στείλε το αίτημα — θα το επιβεβαιώσουμε τηλεφωνικά ή με email.</span></li>
-        </ol>
-        <div class="info-block">
-          <h3>Ωράριο</h3>
-          <ul class="ledger ledger-tight">
-            <li><span>Δευτέρα</span><span class="price">Κλειστά</span></li>
-            <li><span>Τρίτη – Παρασκευή</span><span class="price">10:00 – 19:00</span></li>
-            <li><span>Σάββατο</span><span class="price">9:00 – 17:00</span></li>
-            <li><span>Κυριακή</span><span class="price">11:00 – 16:00</span></li>
-          </ul>
-        </div>
-        <div class="info-block">
-          <h3>Βρες μας</h3>
-          <p>Λεωφ. Λάρτς 118<br>Είσοδος του studio από πίσω, κουδούνι 2.</p>
-          <p><a href="tel:+15555550118">(555) 555-0118</a></p>
-        </div>
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3">
+        <blockquote class="testimonial" data-reveal>
+          <p>Πρώτο κούρεμα εδώ και χρόνια που δεν χρειάστηκε να εξηγήσω δύο φορές.</p>
+          <cite>Ντάνα Ρ., πελάτισσα από το 2023</cite>
+        </blockquote>
+        <blockquote class="testimonial" data-reveal style="--reveal-delay:.08s">
+          <p>Μοιάζει σαν να έκαναν παιδί ένα κουρείο κι ένα κομμωτήριο, με πολύ γούστο.</p>
+          <cite>Θόδωρος Μ.</cite>
+        </blockquote>
+        <blockquote class="testimonial" data-reveal style="--reveal-delay:.16s">
+          <p>Με απέτρεψαν από το κούρεμα που ζήτησα. Ακόμα τους ευχαριστώ.</p>
+          <cite>Πριγιάνκα Σ.</cite>
+        </blockquote>
       </div>
+    </div>
+  </section>
 
-      <form class="booking-form" id="bookingForm" novalidate>
-        <div class="form-row">
-          <label for="name">Όνομα</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
-        </div>
-        <div class="form-row form-row-split">
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-          </div>
-          <div>
-            <label for="phone">Τηλέφωνο</label>
-            <input type="tel" id="phone" name="phone" autocomplete="tel">
-          </div>
-        </div>
-        <div class="form-row form-row-split">
-          <div>
-            <label for="service">Υπηρεσία</label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Διάλεξε μία</option>
-              <optgroup label="Κούρεμα">
-                <option>Κούρεμα &amp; styling</option>
-                <option>Μόνο κούρεμα</option>
-                <option>Κούρεμα με μηχανή / fade</option>
-                <option>Σχηματισμός γενειάδας</option>
-              </optgroup>
-              <optgroup label="Βαφή">
-                <option>Μονοδιαδικασία βαφή</option>
-                <option>Balayage</option>
-                <option>Ανταύγειες</option>
-                <option>Διόρθωση χρώματος</option>
-              </optgroup>
-              <optgroup label="Υφή &amp; περιποίηση">
-                <option>Κούρεμα για μπούκλες</option>
-                <option>Θεραπεία keratin</option>
-                <option>Βαθιά ενυδάτωση</option>
-              </optgroup>
-            </select>
-          </div>
-          <div>
-            <label for="stylist">Στυλίστας</label>
-            <select id="stylist" name="stylist">
-              <option value="">Καμία προτίμηση</option>
-              <option>Πρίγια Νάντι</option>
-              <option>Τζόνα Ρέγιες</option>
-              <option>Ρεν Κάλαχαν</option>
-              <option>Μάρκους Ότζο</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-row form-row-split">
-          <div>
-            <label for="date">Προτιμώμενη ημερομηνία</label>
-            <input type="date" id="date" name="date">
-          </div>
-          <div>
-            <label for="time">Προτιμώμενη ώρα</label>
-            <input type="time" id="time" name="time">
-          </div>
-        </div>
-        <div class="form-row">
-          <label for="notes">Κάτι άλλο που πρέπει να ξέρουμε</label>
-          <textarea id="notes" name="notes" rows="3" placeholder="Μήκος μαλλιών, τελευταία βαφή, αλλεργίες, φωτογραφία αναφοράς — ό,τι είναι σχετικό."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Στείλε αίτημα ραντεβού</button>
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
+  <section class="section" style="background: var(--ink); color: var(--paper); text-align:center;">
+    <div class="container stack" data-reveal>
+      <h2 class="h2" style="color: var(--paper);">Κλείσε την επόμενη θέση σου.</h2>
+      <p class="lede" style="color: var(--paper); margin: 0 auto;">Τέσσερις καρέκλες, ένα ραντεβού τη φορά.</p>
+      <div class="btn-row" style="justify-content:center;">
+        <a href="contact.html#booking" class="btn btn-primary">Κλείστε ραντεβού</a>
+      </div>
     </div>
   </section>
 
 </main>
 
 <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <a class="wordmark wordmark-light" href="#top">Grain</a>
-      <p>Λεωφ. Λάρτς 118<br>(555) 555-0118<br>hello@grainhairstudio.example</p>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="footer-brand" href="index.html">Grain</a>
+        <p>Λεωφ. Λάρτς 118<br>(555) 555-0118<br>hello@grainhairstudio.example</p>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">Σχετικά</a></li>
+          <li><a href="services.html">Υπηρεσίες</a></li>
+          <li><a href="stylists.html">Στυλίστες</a></li>
+          <li><a href="gallery.html">Βιβλιοθήκη χρωμάτων</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Εξυπηρέτηση</h4>
+        <ul class="footer-links">
+          <li><a href="faq.html">Συχνές ερωτήσεις</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+          <li><a href="contact.html#booking">Κλείστε ραντεβού</a></li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <h3>Studio</h3>
-      <ul class="footer-links">
-        <li><a href="#services">Υπηρεσίες</a></li>
-        <li><a href="#stylists">Στυλίστες</a></li>
-        <li><a href="#gallery">Βιβλιοθήκη χρωμάτων</a></li>
-        <li><a href="#booking">Κλείστε ραντεβού</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Grain Hair Studio.</span>
+      <span>Ενδεικτικός ιστότοπος — αντικατέστησε το κείμενο με το δικό σου.</span>
     </div>
-    <div>
-      <h3>Βρες μας αλλού</h3>
-      <ul class="footer-links">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Κριτικές Google</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="wrap footer-bottom">
-    <span>&copy; 2026 Grain Hair Studio.</span>
-    <span>Ενδεικτικός ιστότοπος — αντικατέστησε το κείμενο με το δικό σου.</span>
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
